@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@google-cloud/dialogflow": "*",
+    "express": "*"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [
+    "sql",
+    "node",
+    "dialogflow chatbot",
+    "react"
+  ],
+  "author": "John Hewitt <jhnh198@gmail.com>",
+  "license": "ISC",
+  "description": "Backend for chatbot guided sql database"
+}
