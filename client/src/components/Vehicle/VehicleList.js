@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './Vehicle.css';
+import '../Driver/Driver.css';
 
 const VehicleList = (props) => {
   const [vehicle, setVehicle] = useState([]);
@@ -32,19 +33,19 @@ const VehicleList = (props) => {
     }, []);
 
     return (
-        <div className="container">
-            <table className="table table-borderless p-4 m-4">
-              <thead>
+        <div className="content-list-container">
+            <table className="content-list-table">
+              <thead className='content-list-table-head'>
                 <tr>
-                  <th>Truck Number</th>
-                  <th>Truck Name</th>
+                  <th className='content-list-table-head-item'>Truck Number</th>
+                  <th className='content-list-table-head-item'>Truck Name</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="content-list-table-body">
               {vehicle.map( vehicle => (
-                  <tr onClick={() => getVehicle(vehicle.vehicleid)} key ={vehicle.vehicleid}>
-                    <td> {vehicle.vehicleid}  </td>
-                    <td> {vehicle.vehicle_name}</td>
+                  <tr className="content-list-table-row" onClick={() => getVehicle(vehicle.vehicleid)} key ={vehicle.vehicleid}>
+                    <td className='content-list-table-row-item'> {vehicle.vehicleid}  </td>
+                    <td className='content-list-table-row-item'> {vehicle.vehicle_name}</td>
                   </tr>
                 ))}
               </tbody>              

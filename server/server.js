@@ -7,10 +7,10 @@ const knex = require('knex');
 const db = knex({
     client: 'pg',
     connection: {
-        host: 'DB_HOST',
-        user: 'DB_USER',
-        password: 'DB_PASSWORD',
-        database: 'DATABASE'
+        host: 'YOUR DB IP',
+        user: 'YOUR DB USER',
+        password: 'YOUR DB PASSWORD',
+        database: 'YOUR DATABASE'
     }
 });
 

@@ -4,7 +4,7 @@ import './Navigation.css';
 
 const Navigation = ({ onRouteChange }) => {
     return (
-        <ul className="nav p-4">
+        <ul className="nav-main">
             <li className="nav-item">
           <a className="nav-link" aria-current="page" onClick={() => onRouteChange('drivers')}> Driver List</a>
         </li>

@@ -23,7 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 chatbot.js
-server.js
 /client/src/components/Chat 
 /client/src/components/Chatbot 
 /client/README.md
+servercred.txt

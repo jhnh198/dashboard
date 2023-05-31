@@ -1,21 +1,81 @@
-.driverList{
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-
-     /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 360px;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
-    position: fixed;
-
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
+.content-list-container {
+    display: flex;
+    margin: 2em;
+    background: rgb(227,236,255);
+    background: linear-gradient(176deg, rgba(227,236,255,0.0984768907563025) 0%, rgba(30,20,221,0.05085784313725494) 60%);
+    border-radius: 10px;
+    width: 17vw;
+    height: 80vh;
+    align-items: top;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    overflow: scroll;
 }
 
-.driverCard{
-    padding: 10px 10px;
-    margin-top: 10px;
-    max-width: 18rem;
-} 
+.content-list-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .content-list-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.content-list-table {
+    margin-top: 1em;
+}
+
+.content-list-table-head-item{
+    padding: 1.5em;
+}
+
+.content-list-table-row-item{
+    padding: 1.5em;
+}
+
+.driver-card-container {
+    background: rgb(227,236,255);
+    background: linear-gradient(176deg, rgba(227,236,255,0.0984768907563025) 0%, rgba(30,20,221,0.05085784313725494) 60%);
+    margin-top: 2.1em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.driver-card-detail-header{
+    margin-left: 3em;
+    padding: 2em;
+    font-weight: bold;
+}
+
+.driver-id-section, .driver-info-section, .driver-ruleset-section{
+    margin-left: 3em;
+    margin-bottom: 2em;
+}
+
+.driver-card-section-left, .driver-ruleset-section{
+    flex: 1;
+}
+
+.driver-id-section {
+    margin-top: 3em;
+    display: flex;
+
+}
+
+.driver-card-label, .driver-card-item{
+    padding: 1em;
+    flex: 1;
+}
+
+.driver-card-item{
+    padding: 1em;
+}
+
+.driver-ruleset-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
